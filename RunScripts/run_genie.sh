@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export Events=100
+export Events=100000
 
 # Generate GENIE events
 gevgen -n $Events -p 14 -t 1000180400 -e 0.,10.  --event-generator-list CC --tune G18_10a_02_11a --cross-sections /opt/genie/tune/genie_xsec/v3_00_06/NULL/G1810a0211a-k250-e1000/data/gxspl-FNALbig.xml.gz -f Inputs/MCC9_FluxHist_volTPCActive.root,hEnumu_cv

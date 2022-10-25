@@ -1,5 +1,5 @@
 C Number of events
-EVCT-NEVT 100
+EVCT-NEVT 100000
 C
 C Particle Code (14 = nmu)
 EVCT-IDPT 14

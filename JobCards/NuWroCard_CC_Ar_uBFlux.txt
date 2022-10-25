@@ -7,11 +7,11 @@
 
 # The number of events used to calculate the cross sections: 
 
-number_of_test_events = 10
+number_of_test_events = 100000
 
 # The number of equally weighted events to be saved:
 
-number_of_events   = 10
+number_of_events   = 100000
  
 # Control the random seed persistence:
 
