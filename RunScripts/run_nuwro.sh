@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Generate NuWro events
-nuwro -i NuWroCard_CC_Ar_uBFlux.txt
+nuwro -i JobCards/NuWroCard_CC_Ar_uBFlux.txt
 
 # Prepare NuWro events for Nuisance
-PrepareNuwro -f eventsout.root
+PrepareNuWroEvents -f eventsout.root
 
 # Convert to Nuisance flat tree
-nuisflat -i NUWRO:eventsout.root -o samples/NuWro.flat.root
+nuisflat -i NuWro:eventsout.root -o /project/NuWro.flat.root
 
 # Remove unnecessary files
 rm eventsout.root.par

@@ -10,7 +10,7 @@ EVCT-MDIR 1
 EVCT-DIR 0. 0. 1.
 EVCT-MPV 3
 C Name of the root file containing flux
-EVCT-FILENM  'MCC9_FluxHist_volTPCActive.root'
+EVCT-FILENM  'Inputs/MCC9_FluxHist_volTPCActive.root'
 C Name of the flux histogram inside the root file
 EVCT-HISTNM  'hEnumu_cv'
 C Is the histogram in MeV or GeV; if in MeV set to 1
@@ -29,7 +29,7 @@ NEUT-NUMATOM 40
 C Generate in all modes
 NEUT-MODE 0
 
-NEUT-CRSPATH='../neut/src/crsdat'
+NEUT-CRSPATH='/opt/neut/5.5.0/share/neut/crsdat'
 NEUT-RAND 1
 C Want NEUT to be quiet
 NEUT-QUIET 2

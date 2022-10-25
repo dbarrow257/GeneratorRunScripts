@@ -121,7 +121,7 @@
 	printParticleVectors=.true.
 	freezeRealParticles=.true.
 	LRF_equals_CALC_frame=.true.          !if .false.: no offshelltransport possible
-	path_to_input='../GiBUU/buuinput'  ! for local run cluster
+	path_to_input='/opt/GiBUU/2021/buuinput/buuinput2021/'  ! for local run cluster
 /
 
 

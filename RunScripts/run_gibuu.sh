@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Generate GiBUU events
-../GiBUU/release/testRun/./GiBUU.x < GiBUU_MicroBooNE_numu.job
+GiBUU.x < JobCards/GiBUU_MicroBooNE_numu.job
 
 # Convert to Nuisance format
-PrepareGiBUU -i EventOutput.Pert.00000001.root -f MCC9_FluxHist_volTPCActive.root,hEnumu_cv -o GiBUU.gprep.root
+PrepareGiBUU -i EventOutput.Pert.00000001.root -f Inputs/MCC9_FluxHist_volTPCActive.root,hEnumu_cv -o GiBUU.gprep.root
 
 # Convert to Nuisance flat tree format
-nuisflat -i GiBUU:GiBUU.gprep.root -o samples/GiBUU.flat.root
+nuisflat -i GiBUU:GiBUU.gprep.root -o /project/GiBUU.flat.root
 
 # Remove unnecessary files
 rm *.dat
